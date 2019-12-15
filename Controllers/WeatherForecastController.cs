@@ -26,6 +26,7 @@ namespace PracticeCICD_githib.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            // dev branch created to make pull request
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
